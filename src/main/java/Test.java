@@ -1,4 +1,4 @@
-import listeners.MyAnnotationListener;
+import runners.TestRunner;
 
 
 public class Test {
@@ -7,9 +7,9 @@ public class Test {
 
     public static void main(String[] args){
         try {
-            MyAnnotationListener.run("TestClass");
+            TestRunner.run("TestClass");
             System.out.println("************** repeat again ***************");
-            MyAnnotationListener.run(TestClass.class);
+            TestRunner.run(TestClass.class);
         } catch (Exception e) {
             e.printStackTrace();
         }
